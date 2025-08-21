@@ -1,67 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Basic metadata so the page renders well everywhere -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>ARUN R DAS · Portfolio</title>
-        <meta name="description" content="ARUN R DAS's Portfolio" />
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <main>
-            <!--Heading text-->
-            <h1>ARUN R DAS - Portfolio</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARUN R DAS · Portfolio</title>
+  <meta name="description" content="ARUN R DAS's Portfolio" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Scroll animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <!-- Side Navigation -->
+  <nav class="sidenav" id="sidenav">
+    <a href="#games">Games</a>
+    <a href="#eda">EDA</a>
+    <a href="#predictive">Predictive Models</a>
+  </nav>
 
-            <!--Games section-->
-            <h2>Games</h2>
-            <div class="grid">
-                <!-- Project tile -->
-                <div class="card">
-                    <h3>Adventures of Boxman</h3>
-                    <p>Help a cute box navigate through the dangers of 'The Factory' and battle the final obstacle that awaits</p>
-                    <!-- GIF + Gameplay -->
-                     <div class="media-row">
-                        <img class="gif-template" src="Assets/adventuresofbox.gif" alt="Adventures of Boxman Preview">
-                        <video width="400" height="200" controls autoplay loop>
-                        <source src="Assets\advbox_gameplay.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                     </div>
-                    <!-- Button -->
-                    <a class="button" href="https://ru-n.itch.io/adventuresofboxman" target="_blank">Play Now</a>
-                </div>
-                <!--Project tile-->
-                <div class="card">
-                    <video width="400" height="200" controls autoplay loop>
-                        <source src="Assets\assistant.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>The assistant</h3>
-                    <p>game description</p>
-                    <a class="button" href="https://github.com/ARUN-R-DAS/virtual-streering" target="_blank">View on GitHub</a>
-                </div>
-                <!--Project tile-->
-                <div class="card">
-                    <video width="400" height="200" controls autoplay loop>
-                        <source src="Assets\shippingidle.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Shipping Idle</h3>
-                    <p>game description</p>
-                    <a class="button" href="https://github.com/ARUN-R-DAS/virtual-streering" target="_blank">View on GitHub</a>
-                </div>
-                <!--Project tile-->
-                <div class="card">
-                    <video width="400" height="200" controls autoplay loop>
-                        <source src="Assets\shippingidle.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Shipping Idle</h3>
-                    <p>game description</p>
-                    <a class="button" href="https://github.com/ARUN-R-DAS/virtual-streering" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-        </main>
-    </body>
+  <!-- Page Content -->
+  <main>
+    <h1 class="reveal">ARUN R DAS - Portfolio</h1>
+
+    <!--Games section-->
+    <h2 id="games" class="reveal">Games</h2>
+    <div class="grid">
+      <div class="card reveal">
+        <h3>Adventures of Boxman</h3>
+        <p>Help a cute box navigate through the dangers of 'The Factory' and battle the final obstacle that awaits</p>
+        <div class="media-row">
+          <video width="400" height="200" controls autoplay loop>
+            <source src="Assets/advbox_gameplay.mp4" type="video/mp4">
+          </video>
+        </div>
+        <a class="button" href="https://ru-n.itch.io/adventuresofboxman" target="_blank">Play Now</a>
+      </div>
+
+      <div class="card reveal">
+        <h3>The Assistant</h3>
+        <p>Help an office assistant perform her tasks</p>
+        <div class="media-row">
+          <video width="400" height="200" controls autoplay loop>
+            <source src="Assets/assistant.mp4" type="video/mp4">
+          </video>
+        </div>
+        <a class="button" href="https://ru-n.itch.io/adventuresofboxman" target="_blank">Play Now</a>
+      </div>
+
+      <div class="card reveal">
+        <h3>Shipping Idle</h3>
+        <p>Pickup and deliver cargos using ship as vessel. Navigate using map</p>
+        <div class="media-row">
+          <video width="400" height="200" controls autoplay loop>
+            <source src="Assets/shippingidle.mp4" type="video/mp4">
+          </video>
+        </div>
+        <a class="button" href="https://ru-n.itch.io/shipping-idle" target="_blank">Play Now</a>
+      </div>
+    </div>
+
+    <div class="card reveal">
+        <h3>Shipping Idle</h3>
+        <p>Pickup and deliver cargos using ship as vessel. Navigate using map</p>
+        <div class="media-row">
+          <video width="400" height="200" controls autoplay loop>
+            <source src="Assets/shippingidle.mp4" type="video/mp4">
+          </video>
+        </div>
+        <a class="button" href="https://ru-n.itch.io/shipping-idle" target="_blank">Play Now</a>
+      </div>
+    </div>
+
+    <!--EDA section-->
+    <h2 id="eda" class="reveal">EDA</h2>
+    <div class="grid">
+      <div class="card reveal">
+        <h3>Exploratory Data Analysis Project</h3>
+        <p>Visual storytelling with datasets using Python and visualization libraries.</p>
+      </div>
+    </div>
+
+    <!--Predictive Models section-->
+    <h2 id="predictive" class="reveal">Predictive Models</h2>
+    <div class="grid">
+      <div class="card reveal">
+        <h3>Machine Learning Model</h3>
+        <p>Predictive analytics model demonstrating feature engineering and model evaluation.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+  // Reveal on scroll (toggle active both ways)
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal, .card');
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementBottom = reveals[i].getBoundingClientRect().bottom;
+      let elementVisible = 100;
+
+      // If element is within viewport
+      if (elementTop < windowHeight - elementVisible && elementBottom > elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+
+  // Back to top button
+  const backToTopBtn = document.createElement('button');
+  backToTopBtn.id = 'backToTop';
+  backToTopBtn.innerHTML = '↑';
+  document.body.appendChild(backToTopBtn);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = 'flex';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
 </html>
