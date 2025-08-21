@@ -6,7 +6,14 @@ h1 { text-align: center; font-size: clamp(2rem, 3.5vw + 1rem, 3rem); margin: 0 0
 h2 { margin-top: 2.5rem; font-size: 1.75rem; border-bottom: 2px solid #eee; padding-bottom: .5rem; }
 
 /* Grid for project tiles */
-.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 1rem; }
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr; /* Always one per row */
+  margin-top: 1rem;
+}
+
+
 .card { border: 1px solid rgba(0,0,0,.1); border-radius: 12px; padding: 1rem; text-align: center; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,.05); }
 .card img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; }
 .card h3 { margin: .75rem 0 .5rem; font-size: 1.25rem; }
@@ -34,4 +41,19 @@ h2 { margin-top: 2.5rem; font-size: 1.75rem; border-bottom: 2px solid #eee; padd
 }
 .button:active {
     background-color: #013870;
+}
+
+
+.gif-template {
+    height: 200px !important;
+    width: 200px !important;
+    display: block; /* forces the gif to sit on its own line */
+    margin: 0 auto; /* centers the gif */
+}
+
+.media-row {
+  display: flex;  /* put the gif + gameplay side by side */
+  justify-content: center; /* center then horizontally */
+  gap: 20px; /* space b/w then */
+  margin: 15px 0;
 }
