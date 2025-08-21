@@ -162,3 +162,8 @@ body main { margin-left: 220px; }
   body main { margin-left: 0; }
   .sidenav { width: 100%; height: auto; flex-direction: row; justify-content: center; position: relative; }
 }
+
+.bigvideo{
+  width: 400px !important;
+  height: auto !important;
+}
