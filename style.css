@@ -167,3 +167,8 @@ body main { margin-left: 220px; }
   width: 400px !important;
   height: auto !important;
 }
+
+.bigvideo2{
+  width: auto !important;
+  height: 400px !important;
+}
